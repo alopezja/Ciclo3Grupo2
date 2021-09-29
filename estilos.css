@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+
+    background: rgb(141, 122, 141);
+    height: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+header > p{
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+article {
+    text-align: justify;
+    text-justify: inter-palabra;
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+
+article h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    display:block;
+    margin:auto;
+    padding: 10px;
+    }
+
+nav {
+    padding: 40px;
+    margin: 10px;
+    background: #fdb813;
+}
+
+button{
+    height:20px;
+    width:100px;
+    margin: -20px -50px;
+    position:relative;
+    top:50%;
+    left:50%;
+}
+
+/* Add your flexbox CSS below here */
+
+section {
+    display: flex;
+}
+
+/* Es el css del formulario */
+#form_registrarse {
+    width: 400px;
+    background: #00205b;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-size: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+/* Es el css del formulario */
+#form_registrarse h4 {
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+/* Es el css del formulario */
+#in_nombre_usuario {
+    width: 100%;
+    background: #00205b;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+#in_contrasena {
+    width: 100%;
+    background: #00205b;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+#in_confirmar_contrasena {
+    width: 100%;
+    background: #00205b;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+/* Es el css del formulario */
+#form_registrarsev p {
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* Es el css del formulario */
+#form_registrarse a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Es el css del formulario */
+#form_registrarse a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Es el css del formulario */
+#form_registrarse .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
