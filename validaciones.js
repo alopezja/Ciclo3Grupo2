@@ -69,6 +69,37 @@ function confirmar_contrasena(strintA, strintB) {
     }
 }
 
+let registros = [];
+exports.registros = registros;
+
+exports.agregarRegistro = () => {
+  const valcampo = document.querySelectorAll("input");
+  
+  const { value: usuario } = valcampo[0];
+  const { value: contrasena } = valcampo[1];
+  const { value: confirmar_contrasena } = valcampo[2];
+
+  registros.push({
+    usuario,
+    contrasena,
+    confirmar_contrasena
+  });
+};
+
+
+function OrdenarArreglo(args) {
+  args.sort((a,b) => 
+        a.usuario.toLowerCase() > b.usuario.toLowerCase() ? 1 :
+        a.usuario.toLowerCase() < b.usuario.toLowerCase() ? -1 :
+        0
+        );
+  console.log(args);
+  return args;
+}
+
+
+module.exports.OrdenarArreglo = OrdenarArreglo;
+
 /*module.exports.validar_nombre_usuario = validar_nombre_usuario;
 module.exports.validar_contrasena = validar_contrasena;
 module.exports.confirmar_contrasena = confirmar_contrasena;
